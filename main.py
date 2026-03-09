@@ -85,7 +85,7 @@ def divide(a: str, b: str):
     return {"operation": "divide", "a": a, "b": b, "result": a / b}   
 
 
-@app.get("/area/rectangle")
+@app.get("/area/rectangle/{width}/{height}")
 def calculate_rectangle_area(width: str, height: str):
     """
     Purpose: Calculate the area of rectangle using width and hight.
