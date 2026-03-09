@@ -120,7 +120,7 @@ def calculate_rectangle_area(width: str, height: str):
     }
 
 
-@app.get("/convert/temperature")
+@app.get("/convert/temperature/{value}/{direction}")
 def convert_temp(value: float, direction: str):
     """
     Converts temperature between Celsius and Fahrenheit.
